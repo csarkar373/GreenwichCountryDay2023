@@ -1,0 +1,11 @@
+2 -3 4 5 20
+3 2
+Apple; Banana; Tomato; Bread; Cheese; Cheddar; Churro; Flower; Egg
+Pasta; Celery; Parsley; Basil; Chicken; Beef; Steak; Mozzarella; Thime
+Chocolate; Flour; Gluten; Baking Soda; Vinegar; Olive Oil; Butter; Cream; Baking Powder
+Ham; Apple Seeds; Bitter Almonds; Pumpkin Pie; Apple Pie; Pecan Pie; Prosciutto; Sausage; Egg Yolk
+Egg White; Pesto; Tofu; Goat; Strawberry; Herring; Salmon; Fish; Rice
+Sugar; Simple Syrup; High-fructose corn syrup; Cardamom; Peanut; Cashew; Pecan; Walnut; Chestnuts
+Acorn; Watermelon; Allspice; Nutmeg; Oregano; Cinnamon; Avocado; Avocado Oil; Elderberries
+Yeast; Apple Jacks; Cinnamon Toast Crunch; Red Cabbage; Cilantro; Jalapeno; Turkey; Skinned Chicken; Mutton Liver
+Chopped Liver; Crab; Chicken Stock; Chicken Liver; Chicken Entrails ; Quail; Mutton; Surstromming; Shark
