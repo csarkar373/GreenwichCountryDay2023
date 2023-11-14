@@ -2,11 +2,11 @@ import java.io.File;
 import java.util.*;
 
 public class Problem2 {
-    public static void main(String[] args) throws Exception {
-        File f = new File("input2.txt");
-        Scanner scan = new Scanner(f);
-        int len = Integer.parseInt(scan.nextLine().trim());
-        String s = scan.nextLine().trim();
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan = new Scanner(System.in);
+        int len = Integer.parseInt(scan.nextLine());
+        String s = scan.nextLine();
         // make a map that is a frequency counter
         Map<Character, Integer> m = new HashMap<>();
         for (int i = 0; i < len; i++) {
@@ -20,7 +20,7 @@ public class Problem2 {
         // put the map entries into an arralist and do a two-level sort on them
         List<Map.Entry<Character, Integer>> list = new ArrayList<>(m.entrySet());
         // System.out.println(list); // debug
-        list.sort(new Comparator<Map.Entry<Character, Integer>>() {
+        Comparator<Map.Entry<Character, Integer>> c = new Comparator<Map.Entry<Character, Integer>>() {
             @Override
             public int compare(Map.Entry<Character, Integer> o1, Map.Entry<Character, Integer> o2) {
 
@@ -30,7 +30,8 @@ public class Problem2 {
                 if (o2.getKey() > o1.getKey()) return -1;
                 return 0;
             }
-        });
+        };
+        Collections.sort(list, c); 
         //System.out.println(list); // debug
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list.get(i).getValue(); j++) {
