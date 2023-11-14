@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Problem5 {
     public static void main(String[] args) throws Exception {
-        File f = new File("input5.txt");
+        File f = new File("input5f.txt");
         Scanner scan = new Scanner(f);
         int from = Integer.parseInt(scan.nextLine());
         int to = Integer.parseInt(scan.nextLine());
         String original = scan.nextLine();
-        String num = Integer.toString(Integer.parseInt(original, from), to).toUpperCase();
+        String num = Long.toString(Long.parseLong(original, from), to).toUpperCase();
         // System.out.println(num);
         int answer = 0;
         for (int i = 0; i < num.length(); i++) {
