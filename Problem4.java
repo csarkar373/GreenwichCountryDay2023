@@ -15,12 +15,12 @@ public class Problem4 {
         File f = new File("input4.txt");
         Scanner scan = new Scanner(f);
         String[] tokens = scan.nextLine().split(" ");
-        int[] instructions = new int[tokens.length];
+        long[] instructions = new long[tokens.length];
         for (int i = 0; i < tokens.length; i++) {
             instructions[i] = Integer.parseInt(tokens[i]);
         }
         tokens = scan.nextLine().split(" ");
-        int[] printIndicies = new int[tokens.length];
+        long[] printIndicies = new long[tokens.length];
         for (int i = 0; i < tokens.length; i++) {
             printIndicies[i] = Integer.parseInt(tokens[i]);
         }
