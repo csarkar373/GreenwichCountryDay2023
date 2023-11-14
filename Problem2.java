@@ -5,8 +5,8 @@ public class Problem2 {
     public static void main(String[] args) throws Exception {
         File f = new File("input2.txt");
         Scanner scan = new Scanner(f);
-        int len = Integer.parseInt(scan.nextLine());
-        String s = scan.nextLine();
+        int len = Integer.parseInt(scan.nextLine().trim());
+        String s = scan.nextLine().trim();
         // make a map that is a frequency counter
         Map<Character, Integer> m = new HashMap<>();
         for (int i = 0; i < len; i++) {
