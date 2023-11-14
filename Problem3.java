@@ -5,8 +5,8 @@ public class Problem3 {
     public static void main(String[] args) throws Exception {
         File f = new File("input3.txt");
         Scanner scan = new Scanner(f);
-        double c = Double.parseDouble(scan.nextLine().trim());
-        int len = Integer.parseInt(scan.nextLine().trim());
+        double c = Double.parseDouble(scan.nextLine());
+        int len = Integer.parseInt(scan.nextLine());
         int[] temps = new int[len];
         String[] tokens = scan.nextLine().split(",");
         for (int i = 0; i < tokens.length; i++) {
