@@ -31,15 +31,15 @@ public class Problem4 {
                 foods[row][col] = tokens[col].trim();
             }
         }
-        printArray(foods); // debug
+        //printArray(foods); // debug
         int r = 0;
         int c = 0;
         boolean horiz = true;
         int count = 0;
         int j = 0;
         int i= 0;
-        System.out.println("debug: count =" + count + " r = " + r + " c = " + c + " i = " + i + " j = " + j +
-                "print index = " + printIndicies[j] + " instruction = " + instructions[i]);
+        //System.out.println("debug: count =" + count + " r = " + r + " c = " + c + " i = " + i + " j = " + j +
+                //"print index = " + printIndicies[j] + " instruction = " + instructions[i]);
         for (i = 0; i < instructions.length ; i++) {
 
                 ++count;
@@ -58,8 +58,8 @@ public class Problem4 {
                         while (r < 0)
                             r += 9;
                 }
-                System.out.println("debug: count =" + count + " r = " + r + " c = " + c + " i = " + i + " j = " + j +
-                        "print index = " + printIndicies[j] + " instruction = " + instructions[i]);
+                //System.out.println("debug: count =" + count + " r = " + r + " c = " + c + " i = " + i + " j = " + j +
+                        //"print index = " + printIndicies[j] + " instruction = " + instructions[i]);
                 if (count == printIndicies[j]) {
                     System.out.println(foods[r][c]);
                     count = 0;
