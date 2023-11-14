@@ -9,6 +9,7 @@ public class Problem6 {
         int f1 = Integer.parseInt(scan.nextLine());
         int f2 = Integer.parseInt(scan.nextLine());
         int k= Integer.parseInt(scan.nextLine());
+        /* edge case added */
         if (k <= 0)
             System.exit(0);
         int[] terms = new int[k];
