@@ -12,30 +12,35 @@ public class Problem4 {
     }
     public static void main(String[] args) throws Exception {
         String [] [] foods = new String[9][9];
-        File f = new File("input4.txt");
+        File f = new File("input4d.txt");
         Scanner scan = new Scanner(f);
         String[] tokens = scan.nextLine().split(" ");
-        long[] instructions = new long[tokens.length];
+        int[] instructions = new int[tokens.length];
         for (int i = 0; i < tokens.length; i++) {
             instructions[i] = Integer.parseInt(tokens[i]);
         }
         tokens = scan.nextLine().split(" ");
-        long[] printIndicies = new long[tokens.length];
+        int[] printIndicies = new int[tokens.length];
         for (int i = 0; i < tokens.length; i++) {
             printIndicies[i] = Integer.parseInt(tokens[i]);
         }
         for (int row = 0; row < 9; row++) {
             String line = scan.nextLine();
             tokens = line.split(";");
-            for (int col = 0; col < 9; col++) {
+            /* replaced 9 to tokens.length in the for loop below
+               because one of the test cases did not have nine elements in the array row.
+               not sure if this was a typo or intentional
+             */
+            for (int col = 0; col < tokens.length; col++) {
+                // System.out.println("row = " + row + " col = " + col); // debug
                 foods[row][col] = tokens[col].trim();
             }
         }
         //printArray(foods); // debug
-        long r = 0;
-        long c = 0;
+        int r = 0;
+        int c = 0;
         boolean horiz = true;
-        long count = 0;
+        int count = 0;
         int j = 0;
         int i= 0;
         //System.out.println("debug: count =" + count + " r = " + r + " c = " + c + " i = " + i + " j = " + j +
