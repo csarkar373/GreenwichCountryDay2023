@@ -36,8 +36,8 @@ public class Problem4 {
         long c = 0;
         boolean horiz = true;
         long count = 0;
-        long j = 0;
-        long i= 0;
+        int j = 0;
+        int i= 0;
         //System.out.println("debug: count =" + count + " r = " + r + " c = " + c + " i = " + i + " j = " + j +
                 //"print index = " + printIndicies[j] + " instruction = " + instructions[i]);
         for (i = 0; i < instructions.length ; i++) {
